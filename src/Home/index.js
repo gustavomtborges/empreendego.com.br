@@ -21,6 +21,12 @@ const HomePage = () => (
           <option value="">Selecione uma cidade</option>
           <option>Goiania</option>
         </HomeSelect>
+        <HomeSelect>
+          <option value="">Selecione um setor da economia</option>
+          <option>Comércio</option>
+          <option>Indústria</option>
+          <option>Serviços</option>
+        </HomeSelect>
       </HomeSelectWrapper>
     </HomeWrapper>
   </HomeContainer>
