@@ -1,24 +1,29 @@
 import React from "react";
-import "./styles.css";
 
-const Home = () => (
-  <div className="home__container">
-    <div className="home__wrapper ">
-      <h1 className="home__title" style={{ color: "#FFF" }}>
+import HomeContainer from "./components/HomeContainer";
+import HomeWrapper from "./components/HomeWrapper";
+import HomeTitle from "./components/HomeTitle";
+import HomeSelectWrapper from "./components/HomeSelectWrapper";
+import HomeSelect from "./components/HomeSelect";
+
+const HomePage = () => (
+  <HomeContainer>
+    <HomeWrapper>
+      <HomeTitle>
         Ajudamos você a tomar as melhores decisões pro seu negócio.
-      </h1>
-      <div className="home__select-wrapper">
-        <select className="home__select-input">
+      </HomeTitle>
+      <HomeSelectWrapper>
+        <HomeSelect>
           <option value="">Selecione um estado</option>
           <option value="goias">Goias</option>
-        </select>
-        <select className="home__select-input">
+        </HomeSelect>
+        <HomeSelect>
           <option value="">Selecione uma cidade</option>
           <option>Goiania</option>
-        </select>
-      </div>
-    </div>
-  </div>
+        </HomeSelect>
+      </HomeSelectWrapper>
+    </HomeWrapper>
+  </HomeContainer>
 );
 
-export default Home;
+export default HomePage;
