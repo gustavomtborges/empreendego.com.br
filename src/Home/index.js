@@ -8,6 +8,7 @@ import HomeSelect from "./components/HomeSelect";
 import HomeButton from "./components/HomeButton";
 
 export default class HomePage extends React.Component {
+  goToDashboard = () => {};
   render() {
     return (
       <HomeContainer>

@@ -1,11 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Redirect,
+  Route
+} from "react-router-dom";
 
 import HomePage from "./Home";
+import DashboardPage from "./Dashboard";
 
 const Routes = () => (
   <Router>
-    <Route exact path="/" component={HomePage} />
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/dashboard" component={DashboardPage} />
+      <Redirect to="/" />
+    </Switch>
   </Router>
 );
 
