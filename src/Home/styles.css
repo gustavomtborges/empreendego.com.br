@@ -1,0 +1,42 @@
+.home__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/images/home-bg.jpg") center;
+}
+
+.home__title {
+  margin-top: 7%;
+  margin-bottom: 18px;
+  font-size: 36px;
+  font-family: "Rubrik";
+}
+
+.home__select-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home__select-input {
+  width: 33%;
+  height: 100%;
+  margin-right: 18px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.home__button-go {
+  background-color: #fed800;
+}
