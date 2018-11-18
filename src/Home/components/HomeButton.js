@@ -9,7 +9,7 @@ const HomeButton = styled.button`
   font-size: 24px;
   color: #fff;
   border: 0;
-  background-color: #43a2cc;
+  background-color: ${props => (props.primary ? "#43a2cc" : "")};
 `;
 
 export default HomeButton;
